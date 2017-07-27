@@ -4,7 +4,7 @@
         <title>M.E. Deva Nahousha Rosas Esquivel | Blog</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-        <meta name="description" content="Bienvenidos a mi blog personal, soy Deva Nahousha Rosas Esquivel Licenciada en Administración egresada del Instituto Tecnológico de Sonora, con maestría en Educación con formación en la Universidad del Desarrollo Profesional.">
+        <meta name="description" content="¡Bienvenidos al blog!  Un espacio de debate con el propósito de compartir experiencias y conocimiento. Podrás subir tus tareas y participar en cada materia.">
         <link rel="icon" href="./favicon.png">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/main.css">
@@ -32,20 +32,22 @@
             </div>
         </header>
         <main class="main">
-            <div>
-                <div>
-                    <section>
-                        <header>
-                            <h2>bienvenidos al blog</h2>
-                            <p>Aquí podrás encontrar por categorías las materias y grupos que estoy impartiendo, ademas de artículos para el desarrollo personal de mis alumnos.</p>
+            <div class="large__container">
+                <div class="blog">
+                    <section class="blog__feed-container">
+                        <header class="blog__header">
+                            <h2 class="blog__header-title">bienvenidos al blog</h2>
+                            <p class="blog__header-description">Aquí podrás encontrar por categorías las materias y grupos que estoy impartiendo, ademas de artículos para el desarrollo personal de mis alumnos.</p>
                         </header>
-                        <div>
-                            <form>
-                                <label for="search"></label>
-                                <input type="search" id="search" placeholder="Busca por palabra clave">
+                        <div class="blog__search-container">
+                            <form class="blog__form">
+                                <div class="blog__input-container">
+                                    <label class="blog__input-label" for="search"></label>
+                                    <input class="blog__input" type="search" id="search" placeholder="Busca por palabra clave">
+                                </div>
                             </form>
                         </div>
-                        <div>
+                        <div class="blog__items-container">
                             <article class="post__item post__item--blog">
                                 <div class="post__item-avatar">avatar</div>
                                 <div class="post__item-data-container">
@@ -60,21 +62,21 @@
                                 <div class="post__item-read-more"><a href="#">leer más</a></div>
                             </article>
                         </div>
-                        <div><a href="#">Artículos anteriores</a><a href="#">Artículos nuevos</a></div>
+                        <div class="blog__pagination"><a class="blog__pagination-back" href="#">Artículos anteriores</a><a class="blog__pagination-next" href="#">Artículos nuevos</a></div>
                     </section>
-                    <aside class="sidebar">
-                        <header>
-                            <h3>¿Buscas una materia o grupo?</h3>
-                            <p>Revisa esta lista de categorías.</p>
+                    <aside class="blog__sidebar">
+                        <header class="blog__sidebar-header">
+                            <h3 class="blog__sidebar-title">¿Buscas una materia o grupo?</h3>
+                            <p class="blog__sidebar-subtitle">Revisa esta lista de categorías.</p>
                         </header>
-                        <ul>
-                            <li><a href="#">Categoría 1</a></li>
-                            <li><a href="#">Categoría 2</a></li>
-                            <li><a href="#">Categoría 3</a></li>
-                            <li><a href="#">Categoría 4</a></li>
-                            <li><a href="#">Categoría 5</a></li>
-                            <li><a href="#">Categoría 6</a></li>
-                            <li><a href="#">Sin Categoría</a></li>
+                        <ul class="blog__sidebar-list">
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 1</a></li>
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 2</a></li>
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 3</a></li>
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 4</a></li>
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 5</a></li>
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 6</a></li>
+                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Sin Categoría</a></li>
                         </ul>
                     </aside>
                 </div>
