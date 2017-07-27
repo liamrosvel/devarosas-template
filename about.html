@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>El Blog</title>
+        <title>Acerca de mí</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-        <meta name="description" content="¡Bienvenidos al blog!  Un espacio de debate con el propósito de compartir experiencias y conocimiento. Podrás subir tus tareas y participar en cada materia.">
+        <meta name="description" content="Mis ideales y valores son: Son la lealtad, responsabilidad, compromiso, perseverancia, amor a mi hijo, amistad y honestidad.">
         <link rel="icon" href="./favicon.png">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/main.css">
@@ -32,55 +32,49 @@
             </div>
         </header>
         <main class="main">
-            <div class="large__container">
-                <div class="blog">
-                    <section class="blog__feed-container">
-                        <header class="blog__header">
-                            <h2 class="blog__header-title">bienvenidos al blog</h2>
-                            <p class="blog__header-description">Aquí podrás encontrar por categorías las materias y grupos que estoy impartiendo, ademas de artículos para el desarrollo personal de mis alumnos.</p>
-                        </header>
-                        <div class="blog__search-container">
-                            <form class="blog__form">
-                                <div class="blog__input-container">
-                                    <label class="blog__input-label" for="search"></label>
-                                    <input class="blog__input" type="search" id="search" placeholder="Busca por palabra clave">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="blog__items-container">
-                            <article class="post__item post__item--blog">
-                                <div class="post__item-avatar">avatar</div>
-                                <div class="post__item-data-container">
-                                    <p class="post__item-date">20 de julio del 2017 - <span>7 min. de lectura</span></p>
-                                </div>
-                                <header class="post__item-header">
-                                    <h3 class="post__item-header-title"><a href="#">Título de una sesión larga de escribir</a></h3>
-                                </header>
-                                <p class="post__item-excerpt">Parrafo de la sección de la cual se saca un texto para rellenar y probar como se veria un parrafo, empezara mostrar un texto de relleno.</p>
-                                <figure class="post__item-img-container"><img class="post__item-img" src="#" alt="imagen"></figure>
-                                <div class="post__item-category-container"><a href="#">categoría</a></div>
-                                <div class="post__item-read-more"><a href="#">leer más</a></div>
-                            </article>
-                        </div>
-                        <div class="blog__pagination"><a class="blog__pagination-back" href="#">Artículos anteriores</a><a class="blog__pagination-next" href="#">Artículos nuevos</a></div>
-                    </section>
-                    <aside class="blog__sidebar">
-                        <header class="blog__sidebar-header">
-                            <h3 class="blog__sidebar-title">¿Buscas una materia o grupo?</h3>
-                            <p class="blog__sidebar-subtitle">Revisa esta lista de categorías.</p>
-                        </header>
-                        <ul class="blog__sidebar-list">
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 1</a></li>
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 2</a></li>
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 3</a></li>
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 4</a></li>
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 5</a></li>
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Categoría 6</a></li>
-                            <li class="blog__sidebar-list-item"><a class="blog__sidebar-link" href="#">Sin Categoría</a></li>
-                        </ul>
-                    </aside>
+            <section class="profile">
+                <div class="profile__container">
+                    <header class="profile__main-header">
+                        <h1 class="profile__main-header-title">¿Quién es Deva Rosas?</h1>
+                        <p class="profile__main-header-text">Hola que tal, me llamo Deva Nahousha Rosas Esquivel y soy Licenciada en Administración egresada del <a class="profile__header-link" href="http://itson.mx" target="_blank">Instituto Tecnológico de Sonora</a>, con maestría en Educación con formación en la Universidad del Desarrollo Profesional.</p>
+                    </header>
+                    <div class="profile__photo-container">
+                        <figure class="profile__photo-content"><img class="profile__photo" src="./images/devarosas-about.jpg" alt="deva-nahousha-rosas-esquivel"></figure>
+                        <div class="profile__photo-bg-color">color-bg</div>
+                    </div>
+                    <header class="profile__header">
+                        <h2 class="profile__header-title">Trayectoria Profesional</h2>
+                    </header>
+                    <p class="profile__header-text">Activa laboralmente a partir del 2006 como docente por asignatura en el nivel superior en las universidades de CESUES ahora <a href="#" class="profile__header-link" target="_blank">UES</a> y en <a href="#" class="profile__header-link" target="_blank">UNIDEP</a> impartiendo materias como:</p>
+                    <ul class="profile__list">
+                        <li class="profile__list-item">Mercadotecnia</li>
+                        <li class="profile__list-item">Administración Financiera</li>
+                        <li class="profile__list-item">Metodología de la Investigación</li>
+                        <li class="profile__list-item">Publicidad</li>
+                        <li class="profile__list-item">Sistemas de Información de Mercado</li>
+                        <li class="profile__list-item">Mercados Financieros</li>
+                        <li class="profile__list-item">Habilidades Directivas</li>
+                    </ul>
+                    <p class="profile__text">Así mismo desempeñe el puesto de Coordinadora de Finanzas hasta el 2011.</p>
+                    <div class="profile__job-content">
+                        <h4 class="profile__job-text-title">DGTA (2012)</h4>
+                        <p class="profile__job-text">Ingreso a la educación media superior en el subsistema de Dirección General de Educación Tecnológica Agropecuaria en el Centro Bachillerato Tecnológico Agropecuario 263 en Imuris, Sonora; Encargada del Departamento de Desarrollo Académico, y posteriormente desempeñe el puesto de Jefa de Recursos Humanos.</p>
+                    </div>
+                    <div class="profile__job-content">
+                        <h4 class="profile__job-text-title">Examen Servicio Profesional Docente (2014)</h4>
+                        <p class="profile__job-text">Presento examen en el Servicio Profesional Docente para maestro de educación media superior, el cual los resultados fueron favorables, por lo cual a partir de esa fecha me desempeño como docente de tiempo completo en el C.B.T.A. 161 de Ures impartiendo materias del componente profesional de la carrera Técnico en Administración para el Emprendimiento Agropecuario Rural.</p>
+                    </div>
+                    <p class="profile__text">También realizo funciones como tutora, secretaría del CTA y jefa del Departamento de Desarrollo Académico y Competencia.</p>
+                    <header class="profile__header">
+                        <h2 class="profile__header-title">Mis ideales/valores</h2>
+                        <p class="profile__header-text">Son la lealtad, responsabilidad, compromiso, perseverancia, amor a mi hijo, amistad y honestidad.</p>
+                    </header>
+                    <header class="profile__header">
+                        <h3 class="profile__legend-title">“La Educación es el principal vestidopara la fiesta de la vida”.</h3>
+                        <p class="profile__legend-author">Carolina Herrera</p>
+                    </header>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="large__container">
