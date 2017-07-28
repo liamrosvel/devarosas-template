@@ -12,5 +12,9 @@ html {
 img {
   max-width: 100%; }
 
+input,
+textarea {
+  display: block; }
+
 .icon-menu__bar {
   fill: white; }
