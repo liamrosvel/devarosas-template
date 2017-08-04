@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Bitter:700");
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -10,7 +12,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 img {
   max-width: 100%; }
@@ -35,8 +37,9 @@ textarea {
     z-index: 800;
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
     fill: #ff6081;
-    cursor: pointer; }
+    filter: drop-shadow(1px 1px 4px rgba(68, 68, 68, 0.3)); }
   .header__icon-menu-bar {
     fill: #ffffff; }
 
@@ -62,27 +65,86 @@ textarea {
     right: 0;
     opacity: .98; }
   .main-nav__list {
-    list-style: none;
+    flex-basis: 80%;
     margin: 0;
     padding-left: 0;
+    list-style: none;
     text-align: center; }
   .main-nav__link {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 3.5;
+    font-size: 1.3rem;
+    font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 3;
-    color: #ffffff; }
+    color: rgba(255, 255, 255, 0.9); }
+
+.section-header__header {
+  text-align: center; }
+
+.section-header__title {
+  position: relative;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #2b2b2b; }
+  .section-header__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2.7rem;
+    left: calc(calc(100% - 5rem) / 2);
+    height: 3px;
+    width: 5rem;
+    background-color: #fe4365; }
+
+.section-header__text {
+  color: #2b2b2b;
+  font-weight: 300;
+  line-height: 1.85; }
+
+.buttons__style {
+  display: inline-block;
+  line-height: 2.5;
+  padding: 0 2.5rem;
+  border-radius: 5px;
+  border-bottom: 0.23rem solid #da0129;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fe4365;
+  transition: all 250ms ease-in; }
+  .buttons__style:hover {
+    background-color: #fe1a44; }
+  .buttons__style:active {
+    transform: scale(0.9); }
 
 .landing {
   height: 100vh;
   padding: 3rem 0;
   background: linear-gradient(-45deg, #fe6676, #fe4365); }
+  .landing__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
   .landing__content {
     text-align: center; }
   .landing__logo {
     width: 10rem;
     fill: #ffffff; }
+  .landing__title-container {
+    margin-top: 3rem;
+    border-top: 1.5px dashed rgba(255, 255, 255, 0.35);
+    border-bottom: 1.5px dashed rgba(255, 255, 255, 0.35); }
   .landing__title {
-    color: #ffffff; }
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.3; }
 
 .about {
   padding: 3rem 0; }
@@ -108,21 +170,125 @@ textarea {
     height: 17rem;
     background-color: #fe4365; }
   .about__right-container {
-    padding-top: 20rem;
+    padding-top: 20rem; }
+  .about__legend-container {
     text-align: center; }
+  .about__legend-container, .about__profile-container, .about__blog {
+    margin-bottom: 5rem; }
+  .about__legend-title {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #2b2b2b; }
+  .about__legend-author {
+    display: inline-block;
+    position: relative;
+    margin-top: 0;
+    font-size: .9rem;
+    color: rgba(43, 43, 43, 0.5); }
+    .about__legend-author::before, .about__legend-author::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: .5rem;
+      width: .2rem;
+      height: .2rem;
+      border-radius: 50%;
+      background-color: #e3aad6; }
+    .about__legend-author::before {
+      left: -.5rem; }
+    .about__legend-author::after {
+      right: -.5rem; }
   .about__button-container {
     text-align: center; }
-  .about__button {
-    display: inline-block;
-    line-height: 2.5;
-    padding: 0 2.5rem;
-    border-radius: 5px;
-    border-bottom: 0.23rem solid #da0129;
+
+.latest-posts {
+  padding: 3rem 0;
+  background-color: #f9f9f9; }
+  .latest-posts__container {
+    margin-top: 5rem; }
+  .latest-posts__button-container {
+    text-align: center; }
+
+.post__item {
+  box-shadow: -0.5px -0.5px 8px rgba(204, 204, 204, 0.4);
+  margin-bottom: 2.5rem;
+  padding: 2rem 1rem;
+  background-color: #fff; }
+
+.post__item-title {
+  font-family: "Bitter", serif; }
+
+.post__item-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #ffbdd8; }
+
+.footer {
+  padding: 3rem 0 0; }
+  .footer__content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .footer__logo {
+    width: 8rem;
+    fill: #595959; }
+  .footer__copy {
+    width: 70%;
+    margin: 2rem auto;
+    font-size: .7rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+    color: #2b2b2b; }
+  .footer__list {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none; }
+  .footer__link {
+    position: relative;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #fe4365;
-    transition: all 250ms ease-in; }
-    .about__button:hover {
-      background-color: #fe1a44; }
-    .about__button:active {
-      transform: scale(0.9); }
+    font-size: .85rem;
+    color: #fe4365; }
+    .footer__link:hover {
+      text-decoration: underline; }
+  .footer__link--blog::before, .footer__link--blog::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background-color: #f7d3c6; }
+  .footer__link--about::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background-color: #f7d3c6; }
+  .footer__link--blog::before {
+    left: -1rem; }
+  .footer__link--blog::after, .footer__link--about::after {
+    right: -1rem; }
+  .footer__copyright-container {
+    text-align: center;
+    background-color: #f9f9f9; }
+  .footer__copyright, .footer__liam-link {
+    font-size: .7rem; }
+  .footer__copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    color: #2b2b2b; }
+  .footer__liam-link {
+    color: #2b2b2b;
+    transition: all 200ms ease-in; }
+    .footer__liam-link:hover {
+      color: #fe4365; }
