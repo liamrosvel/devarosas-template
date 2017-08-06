@@ -264,9 +264,8 @@ textarea {
   background-color: #ffbdd8; }
 
 .blog {
+  padding: 4rem 0 3rem;
   background-color: #f9f9f9; }
-  .blog__feed-container {
-    padding: 3rem 0; }
   .blog__search-container {
     margin: 3rem 0; }
   .blog__input {
@@ -330,6 +329,108 @@ textarea {
     color: #2b2b2b; }
     .blog__sidebar-link:hover {
       color: #ff6081; }
+
+.profile {
+  padding: 4rem 0 3rem;
+  background-color: #f9f9f9; }
+  .profile__text-link {
+    text-decoration: none;
+    color: #fe4365; }
+    .profile__text-link:hover {
+      text-decoration: underline; }
+  .profile__photo-content {
+    margin: 4rem auto;
+    padding: 0;
+    width: 70%; }
+  .profile__header {
+    margin-bottom: 2.5rem;
+    text-align: center; }
+  .profile__header-text, .profile__text {
+    text-align: center; }
+  .profile__header-text, .profile__header-title, .profile__text, .profile__list-item, .profile__job-text-title, .profile__job-text, .profile__legend-title {
+    color: #2b2b2b;
+    line-height: 1.8; }
+  .profile__header-text, .profile__text, .profile__job-text, .profile__list-item, .profile__job-text-title {
+    font-weight: 300; }
+  .profile__header-title {
+    font-family: "Bitter", serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #2b2b2b; }
+  .profile__list {
+    list-style: none;
+    margin-bottom: 2rem; }
+  .profile__list-item {
+    line-height: 3;
+    font-weight: 400;
+    position: relative; }
+    .profile__list-item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -1rem;
+      top: 1.4rem;
+      width: .29rem;
+      height: .29rem;
+      border-radius: 50%;
+      background-color: #2b2b2b; }
+  .profile__job-content {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 5rem; }
+    .profile__job-content::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: .2rem;
+      height: 20.5rem;
+      background-color: #2b2b2b; }
+  .profile__job-content-second {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 4rem; }
+    .profile__job-content-second::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: .2rem;
+      height: 25rem;
+      background-color: #2b2b2b; }
+  .profile__job-text-title, .profile__job-text {
+    font-style: italic;
+    font-size: .9rem;
+    padding-left: 2rem; }
+  .profile__job-text-title {
+    font-weight: 400; }
+  .profile__job-text {
+    line-height: 2.5; }
+  .profile__text--style {
+    margin-bottom: 5rem; }
+  .profile__header--legend {
+    margin-top: 6rem; }
+  .profile__legend-title {
+    font-weight: 400; }
+  .profile__legend-author {
+    position: relative;
+    display: inline-block;
+    color: rgba(43, 43, 43, 0.5); }
+    .profile__legend-author::before, .profile__legend-author::after {
+      content: "";
+      position: absolute;
+      top: .5rem;
+      display: block;
+      width: .25rem;
+      height: .25rem;
+      border-radius: 50%;
+      background-color: #ffbdd8; }
+  .profile__legend-author::before {
+    left: -.6rem; }
+  .profile__legend-author::after {
+    right: -.6rem; }
 
 .footer {
   padding: 3rem 0 0; }
