@@ -189,25 +189,26 @@ textarea {
   padding: 3rem 0; }
   .about__image-container {
     position: relative;
-    z-index: 100; }
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto; }
   .about__photo, .about__color-bg {
-    border-radius: 5px; }
+    border-radius: 3px; }
   .about__photo-container {
+    width: 10rem;
     position: absolute;
-    left: 3.5rem;
-    top: .8rem;
-    z-index: 200;
+    left: 0;
+    top: .5rem;
+    z-index: 300;
     margin: 0;
-    padding: 0;
-    width: 10rem; }
+    padding: 0; }
   .about__color-bg {
     position: absolute;
-    right: 3.5rem;
+    right: 0;
     top: 0;
-    z-index: 150;
     width: 10rem;
-    height: 17rem;
-    background-color: #fe4365; }
+    height: 16.5rem;
+    background-color: rgba(204, 204, 204, 0.3); }
   .about__right-container {
     padding-top: 20rem; }
   .about__legend-container {
