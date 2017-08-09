@@ -432,6 +432,93 @@ textarea {
   .profile__legend-author::after {
     right: -.6rem; }
 
+.contact {
+  background-color: #f9f9f9;
+  padding-bottom: 3rem; }
+  .contact__blocks-container {
+    padding: 3rem 0; }
+  .contact__left-container {
+    margin-bottom: 4rem; }
+  .contact__header {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .contact__header-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #2b2b2b; }
+    .contact__header-title::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2.5rem;
+      left: calc(calc(100% - 5rem) / 2);
+      height: 3px;
+      width: 5rem;
+      background-color: #ffbdd8; }
+  .contact__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none; }
+  .contact__header-subtitle, .contact__list-item, .contact__text {
+    color: #2b2b2b;
+    font-weight: 300;
+    line-height: 1.85; }
+  .contact__list-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2.5rem;
+    font-size: .9rem; }
+    .contact__list-item::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 1.6rem;
+      top: .7rem;
+      width: .35rem;
+      height: .35rem;
+      border-radius: 50%;
+      background-color: #f7d3c6; }
+  .contact__text {
+    text-align: center; }
+  .contact__text--style {
+    font-weight: 600; }
+  .contact__form-input-container {
+    margin-bottom: 2rem; }
+  .contact__form-label {
+    color: #2b2b2b;
+    font-size: .9rem; }
+  .contact__form-input, .contact__form-message {
+    padding-left: 1rem;
+    width: 100%;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    font-size: .85rem;
+    line-height: 2.5;
+    color: rgba(68, 68, 68, 0.4); }
+    .contact__form-input::placeholder, .contact__form-message::placeholder {
+      color: rgba(68, 68, 68, 0.4); }
+    .contact__form-input:focus, .contact__form-message:focus {
+      outline: none; }
+  .contact__form-input, .contact__form-message {
+    margin-top: .8rem; }
+  .contact__form-sent-btn {
+    width: 100%;
+    line-height: 2.5;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 3px solid #da0129;
+    color: #fff;
+    cursor: pointer;
+    background-color: #fe4365; }
+
+.contact-header {
+  padding: 4rem 0 3rem; }
+
 .footer {
   padding: 3rem 0 0; }
   .footer__content {
