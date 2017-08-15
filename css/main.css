@@ -35,8 +35,8 @@ textarea {
   .header__icon-menu {
     position: relative;
     z-index: 800;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     fill: #ff6081;
     filter: drop-shadow(1px 1px 4px rgba(68, 68, 68, 0.3)); }
@@ -53,6 +53,9 @@ textarea {
   @media screen and (min-width: 37.5em) and (max-width: 63.9em) {
     .large__container {
       width: 85%; } }
+  @media screen and (min-width: 75em) {
+    .large__container {
+      width: 1100px; } }
 
 @media screen and (max-width: 63.9em) {
   .main-nav {
@@ -104,7 +107,7 @@ textarea {
   @media screen and (min-width: 64em) {
     .main-nav__link {
       position: relative;
-      font-weight: 300;
+      font-weight: 400;
       font-size: .9rem;
       text-transform: uppercase;
       line-height: 3rem;
@@ -135,7 +138,7 @@ textarea {
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #2b2b2b; }
   .section-header__title::before {
     content: "";
@@ -146,19 +149,38 @@ textarea {
     height: 3px;
     width: 5rem;
     background-color: #fe4365; }
+  @media screen and (min-width: 64em) {
+    .section-header__title {
+      font-size: 1.4rem; } }
+
+@media screen and (min-width: 20em) and (max-width: 29.99em) {
+  .section-header__title--line::before {
+    content: "";
+    top: 4.6rem; } }
+
+@media screen and (min-width: 20em) and (max-width: 22.4em) {
+  .section-header__title--line-blog::before {
+    content: "";
+    top: 4.6rem; } }
 
 .section-header__text {
   color: #2b2b2b;
   font-weight: 300;
-  line-height: 1.85; }
+  line-height: 1.85;
+  font-size: 1.2rem; }
+  @media screen and (min-width: 64em) {
+    .section-header__text {
+      font-size: 1.1rem; } }
 
 .buttons__style {
   display: inline-block;
-  width: 15rem;
   padding: 0 2.5rem;
+  width: 17.5rem;
   border-radius: 5px;
   border-bottom: 0.23rem solid #da0129;
   line-height: 2.5;
+  font-size: 1.3rem;
+  font-weight: 600;
   text-decoration: none;
   color: #ffffff;
   background-color: #fe4365;
@@ -180,11 +202,11 @@ textarea {
   .landing__content {
     text-align: center; }
   .landing__logo {
-    width: 12rem;
+    width: 14rem;
     fill: #ffffff; }
-    @media screen and (min-width: 37.5em) {
+    @media screen and (min-width: 75em) {
       .landing__logo {
-        width: 13.5rem; } }
+        width: 15rem; } }
   .landing__title-container {
     margin-top: 3rem;
     border-top: 1.5px dashed rgba(255, 255, 255, 0.35);
@@ -194,11 +216,11 @@ textarea {
     margin-bottom: .5rem;
     color: rgba(255, 255, 255, 0.35);
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.3; }
-    @media screen and (min-width: 30em) {
+    @media screen and (min-width: 64em) {
       .landing__title {
-        font-size: 1.7rem; } }
+        font-size: 2rem; } }
 
 .about {
   padding: 3rem 0; }
@@ -218,6 +240,9 @@ textarea {
   @media screen and (min-width: 64em) {
     .about__left-container, .about__right-container {
       width: 49%; } }
+  @media screen and (min-width: 64em) {
+    .about__left-container {
+      width: 40%; } }
   .about__image-container {
     position: relative;
     width: 180px;
@@ -235,7 +260,7 @@ textarea {
     @media screen and (min-width: 64em) {
       .about__image-container {
         width: 250px;
-        margin-top: 3rem; } }
+        margin-top: 1.5rem; } }
   .about__photo, .about__color-bg {
     border-radius: 3px; }
   .about__photo-container {
@@ -292,7 +317,8 @@ textarea {
       padding-top: 23rem; } }
   @media screen and (min-width: 64em) {
     .about__right-container {
-      padding-top: 0; } }
+      padding-top: 0;
+      width: 60%; } }
   .about__profile-container, .about__blog {
     margin-bottom: 5rem; }
   .about__button-container {
@@ -339,6 +365,13 @@ textarea {
 .blog {
   padding: 4rem 0 3rem;
   background-color: #f9f9f9; }
+  @media screen and (min-width: 64em) {
+    .blog__items-container {
+      display: flex;
+      justify-content: space-between; } }
+  @media screen and (min-width: 64em) {
+    .blog__feed-container {
+      width: 65%; } }
   .blog__search-container {
     margin: 3rem 0; }
   .blog__input {
@@ -346,8 +379,11 @@ textarea {
     width: 100%;
     border: 1px solid #efefef;
     border-radius: 5px;
-    font-size: .85rem;
-    line-height: 2.5;
+    line-height: 3;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 96% 50%;
     box-shadow: -0.5px -0.5px 8px rgba(204, 204, 204, 0.4);
     color: rgba(68, 68, 68, 0.4); }
     .blog__input::placeholder {
@@ -355,23 +391,33 @@ textarea {
     .blog__input:focus {
       outline: none; }
   .blog__pagination {
-    margin: 5rem 0 2rem;
+    margin: 5rem 0 3rem;
     text-align: center; }
+    @media screen and (min-width: 48em) {
+      .blog__pagination {
+        display: flex;
+        justify-content: space-around; } }
+    @media screen and (min-width: 64em) {
+      .blog__pagination {
+        margin: 1rem 0; } }
   .blog__pagination-back, .blog__pagination-next {
     display: inline-block;
-    width: 12rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    width: 17rem;
     border: 1px solid #ff6081;
     border-radius: 5px;
-    line-height: 3;
+    line-height: 3.5;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
     transition: all 200ms ease-in; }
+    @media screen and (min-width: 64em) {
+      .blog__pagination-back, .blog__pagination-next {
+        width: 15rem;
+        font-size: 1rem; } }
   .blog__pagination-back {
     color: #ff6081; }
-    @media screen and (min-width: 30em) {
-      .blog__pagination-back {
-        margin-right: 2.5rem; } }
   .blog__pagination-next {
     color: #fff;
     background-color: #ff6081; }
@@ -380,6 +426,9 @@ textarea {
       border-color: #fe4365; }
   .blog__sidebar {
     padding-bottom: 5rem; }
+    @media screen and (min-width: 64em) {
+      .blog__sidebar {
+        width: 30%; } }
   .blog__sidebar-container {
     padding: 2rem 1rem;
     text-align: center;
@@ -387,24 +436,41 @@ textarea {
     background-color: #fff; }
   .blog__sidebar-title {
     font-weight: 400;
-    color: #2b2b2b; }
-  .blog__sidebar-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.6;
     color: #2b2b2b;
-    font-weight: 300; }
+    margin-top: 0; }
+    @media screen and (min-width: 64em) {
+      .blog__sidebar-title {
+        font-size: 1.3rem;
+        line-height: 1.4; } }
+  .blog__sidebar-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #2b2b2b; }
+    @media screen and (min-width: 64em) {
+      .blog__sidebar-subtitle {
+        font-size: 1.1rem; } }
   .blog__sidebar-list {
     margin-top: 2rem;
     margin-bottom: 0;
     padding-left: 0;
     list-style: none; }
+    @media screen and (min-width: 64em) {
+      .blog__sidebar-list {
+        margin-top: 1rem; } }
   .blog__sidebar-link {
     display: inline-block;
-    font-size: .9;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 3;
     text-decoration: none;
     color: #2b2b2b; }
     .blog__sidebar-link:hover {
       color: #ff6081; }
+    @media screen and (min-width: 64em) {
+      .blog__sidebar-link {
+        font-size: 1rem; } }
 
 .profile {
   padding: 4rem 0 3rem;
@@ -432,11 +498,12 @@ textarea {
   .profile__header-text, .profile__header-title, .profile__text, .profile__list-item, .profile__job-text-title, .profile__job-text, .profile__legend-title {
     color: #2b2b2b;
     line-height: 1.8; }
-  .profile__header-text, .profile__text, .profile__job-text, .profile__list-item, .profile__job-text-title {
-    font-weight: 300; }
+  .profile__header-text, .profile__text, .profile__list-item, .profile__job-text-title {
+    font-weight: 300;
+    font-size: 1.2rem; }
   .profile__header-title {
     font-family: "Bitter", serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #2b2b2b; }
   .profile__list {
@@ -470,7 +537,7 @@ textarea {
       bottom: 0;
       left: 0;
       width: .2rem;
-      height: 20.5rem;
+      height: 26rem;
       background-color: #2b2b2b; }
       @media screen and (min-width: 30em) {
         .profile__job-content::before {
@@ -492,7 +559,7 @@ textarea {
       bottom: 0;
       left: 0;
       width: .2rem;
-      height: 25rem;
+      height: 33rem;
       background-color: #2b2b2b; }
       @media screen and (min-width: 30em) {
         .profile__job-content-second::before {
@@ -505,21 +572,21 @@ textarea {
           height: 12rem; } }
   .profile__job-text-title, .profile__job-text {
     font-style: italic;
-    font-size: .9rem;
+    font-weight: 300;
     padding-left: 2rem; }
   .profile__job-text-title {
     font-weight: 400; }
   .profile__job-text {
-    line-height: 2.5; }
+    line-height: 2.5;
+    font-size: 1.02rem; }
   .profile__text--style {
     margin-bottom: 5rem; }
   .profile__header--legend {
     margin-top: 6rem; }
   .profile__legend-title {
-    font-weight: 400; }
-    @media screen and (min-width: 48em) {
-      .profile__legend-title {
-        margin-bottom: 0; } }
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0; }
   .profile__legend-author {
     position: relative;
     display: inline-block;
@@ -558,7 +625,7 @@ textarea {
     display: inline-block;
     margin-bottom: 1.5rem;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     text-transform: uppercase;
     color: #2b2b2b; }
     .contact__header-title::before {
@@ -570,6 +637,8 @@ textarea {
       height: 3px;
       width: 5rem;
       background-color: #ffbdd8; }
+  .contact__header-subtitle, .contact__list-item, .contact__text {
+    font-size: 1.2rem; }
   .contact__list {
     margin-top: 0;
     margin-bottom: 0;
@@ -582,14 +651,13 @@ textarea {
   .contact__list-item {
     position: relative;
     margin-bottom: 2rem;
-    padding-left: 2.5rem;
-    font-size: .9rem; }
+    padding-left: 2.5rem; }
     .contact__list-item::before {
       content: "";
       display: block;
       position: absolute;
       left: 1.6rem;
-      top: .7rem;
+      top: .9rem;
       width: .35rem;
       height: .35rem;
       border-radius: 50%;
@@ -605,14 +673,13 @@ textarea {
     margin-bottom: 2rem; }
   .contact__form-label {
     color: #2b2b2b;
-    font-size: .9rem; }
+    font-size: 1.1rem; }
   .contact__form-input, .contact__form-message {
     padding-left: 1rem;
     width: 100%;
     border: 1px solid #efefef;
     border-radius: 5px;
-    font-size: .85rem;
-    line-height: 2.5;
+    line-height: 3;
     color: rgba(68, 68, 68, 0.4); }
     .contact__form-input::placeholder, .contact__form-message::placeholder {
       color: rgba(68, 68, 68, 0.4); }
@@ -620,18 +687,48 @@ textarea {
       outline: none; }
   .contact__form-input, .contact__form-message {
     margin-top: .8rem; }
+  .contact__form-message {
+    resize: none; }
   .contact__form-sent-btn {
     width: 100%;
-    line-height: 2.5;
-    border: 0;
+    border: none;
     border-radius: 5px;
-    border-bottom: 3px solid #da0129;
-    color: #fff;
-    cursor: pointer;
-    background-color: #fe4365; }
+    border-bottom: 0.23rem solid #da0129;
+    line-height: 2.5;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fe4365;
+    transition: all 250ms ease-in; }
+    .contact__form-sent-btn:hover {
+      background-color: #fe1a44; }
+    .contact__form-sent-btn:active {
+      transform: scale(0.9); }
 
 .contact-header {
   padding: 4rem 0 3rem; }
+
+.single-post {
+  padding: 4rem 0 3rem;
+  background-color: #f9f9f9; }
+  .single-post__container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (min-width: 48em) {
+      .single-post__container {
+        width: 700px; } }
+  .single-post__header {
+    display: flex;
+    justify-content: flex-start; }
+  .single-post__avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: #f7d3c6; }
+  .single-post__date {
+    padding-left: 1rem; }
 
 .footer {
   padding: 3rem 0 0; }
@@ -659,7 +756,7 @@ textarea {
   .footer__copy {
     width: 70%;
     margin: 2rem auto;
-    font-size: .7rem;
+    font-size: .8rem;
     text-transform: uppercase;
     line-height: 1.8;
     color: #2b2b2b; }
@@ -673,7 +770,7 @@ textarea {
   .footer__link {
     position: relative;
     text-decoration: none;
-    font-size: .85rem;
+    font-size: .9rem;
     color: #fe4365; }
     .footer__link:hover {
       text-decoration: underline; }
@@ -703,11 +800,11 @@ textarea {
     text-align: center;
     background-color: #f9f9f9; }
   .footer__copyright, .footer__liam-link {
-    font-size: .7rem; }
+    font-size: .8rem; }
   .footer__copyright {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 1.5rem 0;
+    padding: 1.8rem 0;
     text-transform: uppercase;
     color: #2b2b2b; }
   .footer__liam-link {
