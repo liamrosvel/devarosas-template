@@ -5,6 +5,12 @@ html {
   box-sizing: border-box;
   font-size: 16px; }
 
+*::-moz-selection {
+  background-color: yellow; }
+
+*::selection {
+  background-color: yellow; }
+
 *,
 *::before,
 *::after {
@@ -29,6 +35,9 @@ textarea {
   width: 100%;
   background-color: transparent;
   padding: 1rem 0; }
+  @media screen and (min-width: 64em) {
+    .header {
+      padding: 0; } }
   .header__icon-menu-container {
     display: flex;
     justify-content: flex-end; }
@@ -45,6 +54,11 @@ textarea {
         display: none; } }
   .header__icon-menu-bar {
     fill: #ffffff; }
+
+@media screen and (min-width: 64em) {
+  .header--style {
+    background-color: #fff;
+    box-shadow: 0 -0.5px 8px rgba(204, 204, 204, 0.5); } }
 
 .large__container {
   width: 90%;
@@ -110,7 +124,7 @@ textarea {
       font-weight: 400;
       font-size: .9rem;
       text-transform: uppercase;
-      line-height: 3rem;
+      line-height: 4;
       letter-spacing: 2px;
       color: #fff; }
       .main-nav__link::before {
@@ -124,6 +138,13 @@ textarea {
         transition: all 200ms ease-in; }
       .main-nav__link:hover::before {
         width: 100%; } }
+
+@media screen and (min-width: 64em) {
+  .main-nav__link--style {
+    color: #2b2b2b; }
+    .main-nav__link--style::before {
+      content: "";
+      background-color: #2b2b2b; } }
 
 .section-header__header {
   text-align: center; }
@@ -433,6 +454,9 @@ textarea {
   padding: 4rem 0 3rem;
   background-color: #f9f9f9; }
   @media screen and (min-width: 64em) {
+    .blog {
+      padding-top: 9rem; } }
+  @media screen and (min-width: 64em) {
     .blog__items-container {
       display: flex;
       justify-content: space-between; } }
@@ -542,6 +566,9 @@ textarea {
 .profile {
   padding: 4rem 0 3rem;
   background-color: #f9f9f9; }
+  @media screen and (min-width: 64em) {
+    .profile {
+      padding-top: 7.5rem; } }
   @media screen and (min-width: 64em) {
     .profile__container {
       margin-left: auto;
@@ -811,6 +838,9 @@ textarea {
 
 .contact-header {
   padding: 4rem 0 3rem; }
+  @media screen and (min-width: 64em) {
+    .contact-header {
+      padding-top: 7.5rem; } }
 
 .single-post {
   padding: 4rem 0 3rem;
